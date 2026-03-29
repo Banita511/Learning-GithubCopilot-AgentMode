@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ISSUE_REPOSITORY: ${{ github.repository }}
-      ISSUE_NUMBER: ${{ needs.find_exercise.outputs.issue-number }}
+      ISSUE_NUMBER: #2 ${{ github.event.number }}
 
     steps:
       - name: Checkout
